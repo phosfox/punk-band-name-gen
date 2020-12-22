@@ -1,10 +1,10 @@
 <template>
   <div>
     <div>
-      <p>The {{ bandName }}</p>
+      <p class="band">The {{ bandName }}</p>
     </div>
     <div>
-      <button v-on:click="newBandName">New Bandname</button>
+      <button class="button" v-on:click="newBandName">New Bandname</button>
     </div>
   </div>
 </template>
@@ -37,4 +37,25 @@ export default {
 </script>
 
 <style>
+.band {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25pt;
+}
+.button {
+  border-width: 1px;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  background-color: #040404;
+  border-color: transparent;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: #040404;
+}
 </style>
