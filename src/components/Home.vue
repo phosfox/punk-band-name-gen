@@ -22,15 +22,11 @@ export default {
   data: () => {
     return {
       bandName: "Placeholders",
-      bandNames: [],
     };
-  },
-  created() {
-    this.bandNames = words;
   },
   methods: {
     newBandName: function () {
-      this.bandName = sample(this.bandNames).capitalize();
+      this.bandName = sample(words).capitalize();
     },
   },
 };
